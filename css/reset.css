@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    list-style: none;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size:var(--fontSizeAll);
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: var(--colorWhite);
+}
+img{
+    display: block;
+    max-width: 100%;
+}

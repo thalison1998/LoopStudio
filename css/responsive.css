@@ -1,0 +1,91 @@
+@media (max-width:810px){
+    :root{
+        --gapSides:2rem;
+    }
+    
+    .header{
+        background-image: url(/images/mobile/image-hero.jpg);
+        background-position:center center;
+        padding: 4rem 0 5rem 0;
+        
+    }
+
+    .title{
+        margin:10rem 0;
+    }
+    .section-one{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8rem;
+    }
+    .one-img{
+        max-width: initial;
+        width: 100%;
+    }
+    .one-img img{
+        width: 100%;
+    }
+    .one-text{
+        position: initial;
+        padding:8rem 0 ;
+        text-align: center;
+        max-width: 100%;
+    }
+    .one-text p{
+        padding: 0 2rem;
+    }
+    .two-creations h1{
+        margin: 0 auto;
+    }
+    .btn{
+        display: none;
+    }
+    .btn--none{
+        display:block;
+    }
+    .cards{
+    grid-template-columns: repeat(auto-fit,minmax(32rem, auto));
+    }
+    .footer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+     
+}
+@media (max-width:760px){
+    .title{
+        justify-self: center;
+        font-size:10vmin;
+    }
+    .footer{
+    grid-template-areas:
+        'logo'
+        'nav'
+        'midia'
+        'copy'
+    ;
+    gap:1rem 0;
+    grid-template-columns: 1fr;
+    }
+    .midia,.logo,.foot,.copy{
+        justify-self: center;
+    }
+    .menu.foot ul{
+        display: block;
+    }
+    .menu.foot ul li{
+        margin:3rem  0;
+        text-align: center;
+    }
+}
+@media (max-width:448px){
+    :root{
+        --gapSides:1rem;
+        --fontSizeAll:45%;
+    }
+    .title{
+        font-size:12vmin;
+        padding: 2rem;
+        max-width: 100%;
+    }
+}
